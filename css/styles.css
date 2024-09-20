@@ -1,26 +1,27 @@
-/* ベーシックスタイル */
+/* 基本スタイル - グレイ色を白に変更 */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #333;
+    background-color: #fff; /* 背景は完全な白 */
+    color: #000; /* テキストも黒でシンプルに */
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
+/* ヘッダーのスタイル */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #444;
-    color: white;
+    background-color: #fff; /* ヘッダーも白 */
+    color: black;
 }
 
 .profile-icon {
     font-size: 24px;
     text-decoration: none;
-    color: white;
+    color: black; /* アイコンも黒 */
     transition: transform 0.3s;
 }
 
@@ -37,14 +38,14 @@ header {
 #search-input {
     width: 300px;
     padding: 10px;
-    border: none;
+    border: 1px solid black;
     border-radius: 20px;
     font-size: 16px;
 }
 
 #search-button {
-    background-color: #666;
-    border: none;
+    background-color: #fff;
+    border: 1px solid black;
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
@@ -64,14 +65,14 @@ header {
     justify-items: center;
 }
 
+/* 記事カードのスタイル */
 .article {
-    background-color: #f9f9f9;
+    background-color: #fff; /* 記事の背景も白 */
     width: 90%;
     max-width: 300px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    border: 1px solid #000;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -82,38 +83,50 @@ header {
 
 .article h2 {
     font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+    color: #000;
 }
 
 .article p {
-    color: #666;
+    color: #000;
     font-size: 16px;
-    line-height: 1.5;
 }
 
+/* "次へ"ボタン */
 .pagination {
     margin: 20px;
 }
 
 .pagination button {
-    background-color: #444;
-    color: white;
+    background-color: #fff;
+    color: black;
     padding: 10px 20px;
-    border: none;
+    border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .pagination button:hover {
-    background-color: #666;
+    background-color: #ddd;
 }
 
+/* フッター */
 footer {
-    background-color: #444;
-    color: white;
+    background-color: #fff;
+    color: black;
     padding: 10px 0;
     width: 100%;
     position: relative;
 }
+
+/* レスポンシブデザイン - スマホ対応 */
+@media screen and (max-width: 768px) {
+    .articles {
+        grid-template-columns: 1fr; /* スマホでは1列表示 */
+    }
+
+    #search-input {
+        width: 200px; /* 検索バーを少し狭める */
+    }
+}
+
