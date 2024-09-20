@@ -8,6 +8,10 @@
 </head>
 <body>
     <header>
+        <!-- 左上に🏕アイコン -->
+        <a href="profile.html" class="profile-icon">🏕</a>
+
+        <!-- 検索バー -->
         <div class="search-container">
             <input type="text" id="search-input" placeholder="タイトルで検索...">
             <button id="search-button">
@@ -17,17 +21,25 @@
     </header>
 
     <main>
+        <h1>My Blog</h1>
         <div class="articles">
             <div class="article" onclick="window.location.href='article1.html';">
-                <h2>記事1</h2>
+                <h2>自然の魅力を探る旅</h2>
+                <p>自然の中でのキャンプの楽しみ方とその魅力を紹介します。</p>
             </div>
             <div class="article" onclick="window.location.href='article2.html';">
-                <h2>記事2</h2>
+                <h2>夜空の星を見る方法</h2>
+                <p>星空観察のポイントとおすすめの場所について話します。</p>
             </div>
             <!-- 追加記事 -->
         </div>
     </main>
 
+    <footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>
+
     <script src="js/search.js"></script>
 </body>
 </html>
+
