@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="タイトルで検索...">
+            <button id="search-button">
+                <img src="magnifying-glass-icon.png" alt="虫眼鏡">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="articles">
+            <div class="article" onclick="window.location.href='article1.html';">
+                <h2>記事1</h2>
+            </div>
+            <div class="article" onclick="window.location.href='article2.html';">
+                <h2>記事2</h2>
+            </div>
+            <!-- 追加記事 -->
+        </div>
+    </main>
+
+    <script src="js/search.js"></script>
+</body>
+</html>
