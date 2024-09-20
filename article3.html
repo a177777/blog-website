@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHubでウェブサイトを公開する方法② - リポジトリ作成と公開編</title>
+    <title>GitHub Pagesでウェブサイトのデザインと機能をカスタマイズする方法③</title>
     <link rel="stylesheet" href="https://Ruigon.github.io/blog-website/css/styles.css">
     <style>
         /* タイトルのサイズ調整 */
@@ -46,52 +46,96 @@
         header a:hover {
             text-decoration: underline;
         }
+        /* プロフィールのスタイル */
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .profile .info {
+            line-height: 1.6;
+        }
+        .profile .info h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .profile .info p {
+            margin: 5px 0;
+        }
+        .profile .info a {
+            color: #1E90FF;
+            text-decoration: none;
+        }
+        .profile .info a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>【基礎編】GitHubでウェブサイトを公開する方法② - リポジトリ作成と公開編</h1>
+        <h1>【応用編】GitHub Pagesでウェブサイトのデザインと機能をカスタマイズする方法③</h1>
         <a href="index.html">← 戻る</a>
     </header>
 
     <main>
         <section>
-            <h2>1. GitHubリポジトリの作成</h2>
-            <p>GitHubでウェブサイトを公開するには、まずリポジトリを作成する必要があります。以下の手順でリポジトリを作成しましょう。</p>
+            <h2>1. ウェブサイトのデザインをカスタマイズ</h2>
+            <p>GitHub Pagesで公開したウェブサイトのデザインをカスタマイズするには、CSSを編集します。以下に、基本的なカスタマイズの方法を紹介します。</p>
             
-            <h3>ステップ1: GitHubにログイン</h3>
-            <p>まず、<a href="https://github.com" target="_blank">GitHubのウェブサイト</a> にログインします。</p>
+            <h3>ステップ1: カスタムCSSファイルの作成</h3>
+            <p>まず、リポジトリ内に新しいCSSファイル（例: `custom.css`）を作成します。このファイルにデザインのカスタマイズを追加します。</p>
             
-            <h3>ステップ2: 新しいリポジトリを作成</h3>
-            <p>ログイン後、画面の右上にある「+」アイコンをクリックし、「New repository」を選択します。</p>
+            <h3>ステップ2: CSSファイルのリンク追加</h3>
+            <p>作成したCSSファイルをHTMLファイルにリンクします。例えば、`<head>`タグ内に以下のように追加します：</p>
+            <pre><code>&lt;link rel="stylesheet" href="custom.css"&gt;</code></pre>
             
-            <h3>ステップ3: リポジトリの情報を入力</h3>
-            <p>リポジトリの名前、説明（オプション）、公開設定を選択します。ウェブサイト用のリポジトリなので、「Repository name」には「username.github.io」と入力します（`username` はあなたのGitHubユーザー名に置き換えてください）。</p>
-            
-            <h3>ステップ4: リポジトリの初期設定</h3>
-            <p>リポジトリの作成が完了したら、READMEファイルを作成するオプションが表示されますが、今回は「Add a README file」を選択せずに「Create repository」をクリックします。</p>
+            <h3>ステップ3: デザインのカスタマイズ</h3>
+            <p>CSSファイルに、背景色やフォントサイズ、レイアウトなどのスタイルを追加して、ウェブサイトのデザインを変更します。</p>
         </section>
 
         <section>
-            <h2>2. ウェブサイトファイルのアップロード</h2>
-            <p>リポジトリを作成したら、ウェブサイトのファイルをアップロードしていきます。</p>
+            <h2>2. ウェブサイトに機能を追加</h2>
+            <p>デザインだけでなく、ウェブサイトに機能を追加することで、より便利でインタラクティブなサイトにすることができます。</p>
             
-            <h3>ステップ1: リポジトリにアクセス</h3>
-            <p>作成したリポジトリにアクセスし、「Add file」ボタンをクリックして「Upload files」を選択します。</p>
+            <h3>ステップ1: JavaScriptファイルの作成</h3>
+            <p>ウェブサイトに機能を追加するには、JavaScriptを使用します。リポジトリ内に新しいJavaScriptファイル（例: `script.js`）を作成します。</p>
             
-            <h3>ステップ2: ファイルのアップロード</h3>
-            <p>ローカルのウェブサイトファイル（`index.html`, `styles.css`, など）をドラッグ＆ドロップでアップロードします。すべてのファイルがアップロードできたら、「Commit changes」ボタンをクリックします。</p>
+            <h3>ステップ2: JavaScriptファイルのリンク追加</h3>
+            <p>作成したJavaScriptファイルをHTMLファイルにリンクします。例えば、`<body>`タグの末尾に以下のように追加します：</p>
+            <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
             
-            <h3>ステップ3: GitHub Pagesの設定</h3>
-            <p>リポジトリの「Settings」タブを開き、「Pages」セクションに移動します。「Source」ドロップダウンメニューから「main」ブランチを選択し、「Save」をクリックします。</p>
+            <h3>ステップ3: 機能の実装</h3>
+            <p>JavaScriptファイルに、スライダー、モーダルウィンドウ、インタラクティブな要素などの機能を追加します。</p>
+        </section>
+
+        <section>
+            <h2>3. プロフィールセクションの作成</h2>
+            <p>プロフィールセクションを追加することで、ウェブサイトに自己紹介や連絡先情報を表示できます。以下に簡単なプロフィールセクションの作成方法を示します。</p>
             
-            <h3>ステップ4: ウェブサイトの公開</h3>
-            <p>設定が完了すると、数分後にGitHub Pagesで公開されます。ウェブサイトのURLは「https://username.github.io」になります。ブラウザでアクセスして、ウェブサイトが正しく表示されることを確認しましょう。</p>
+            <h3>ステップ1: HTMLにプロフィールセクションを追加</h3>
+            <p>HTMLファイルにプロフィールセクションを追加します。例：</p>
+            <pre><code>&lt;div class="profile"&gt;
+    &lt;img src="your-icon.png" alt="プロフィールアイコン"&gt;
+    &lt;div class="info"&gt;
+        &lt;h2&gt;あなたの名前&lt;/h2&gt;
+        &lt;p&gt;趣味: あなたの趣味&lt;/p&gt;
+        &lt;p&gt;&lt;a href="https://www.youtube.com/channel/your-channel-id" target="_blank"&gt;YouTubeチャンネル&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            
+            <h3>ステップ2: CSSでプロフィールセクションをスタイリング</h3>
+            <p>上記のHTMLに合わせて、CSSでスタイリングを行います。例えば、プロフィールアイコンのサイズやレイアウトを調整します。</p>
         </section>
 
         <section>
             <h2>次回予告</h2>
-            <p>次回は、ウェブサイトのデザインをさらにカスタマイズする方法や、追加の機能を実装する方法について解説します。お楽しみに！</p>
+            <p>次回は、ウェブサイトに動的なコンテンツを追加する方法について解説します。例えば、ユーザーの入力に応じてコンテンツが変わるようなインタラクティブな要素を実装する方法についてお話しします。お楽しみに！</p>
         </section>
     </main>
 </body>
