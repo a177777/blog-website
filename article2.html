@@ -46,6 +46,29 @@
         header a:hover {
             text-decoration: underline;
         }
+
+        /* 次へ・戻るボタンのスタイル */
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navigation-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFFFFF; /* 白色の背景 */
+            color: #000000; /* 黒い文字 */
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            border: 2px solid #000000; /* 黒色のボーダー */
+            margin: 10px;
+        }
+        .navigation-button:hover {
+            background-color: #E0E0E0; /* ホバー時の背景色を薄いグレーに */
+            color: #000000; /* ホバー時の文字色も黒のまま */
+            border-color: #000000; /* ホバー時のボーダー色 */
+        }
     </style>
 </head>
 <body>
@@ -94,6 +117,13 @@
             <p>次回は、ウェブサイトのデザインをさらにカスタマイズする方法や、追加の機能を実装する方法について解説します。お楽しみに！</p>
         </section>
     </main>
+
+    <!-- 戻る・次へリンク -->
+    <footer>
+        <a href="article1.html" class="navigation-button">← 戻る</a>
+        <a href="article3.html" class="navigation-button">次へ →</a>
+    </footer>
 </body>
 </html>
+
 
