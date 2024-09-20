@@ -46,6 +46,24 @@
         header a:hover {
             text-decoration: underline;
         }
+        /* 次へリンクのスタイル */
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .next-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF; /* 青色の背景 */
+            color: #FFFFFF; /* 白い文字 */
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .next-button:hover {
+            background-color: #0056b3; /* ホバー時の背景色 */
+        }
     </style>
 </head>
 <body>
@@ -86,6 +104,10 @@
             <p>次回は、GitHubでリポジトリを作成し、ウェブサイトを公開する方法について解説します。お楽しみに！</p>
         </section>
     </main>
+
+    <!-- 次へリンク -->
+    <footer>
+        <a href="article2.html" class="next-button">次へ</a>
+    </footer>
 </body>
 </html>
-
