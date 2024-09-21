@@ -75,19 +75,40 @@
         .profile .info a:hover {
             text-decoration: underline;
         }
-        /* 次へ・戻るリンクのスタイル */
-        .navigation {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-        .navigation a {
+          /* 戻るリンクのスタイル */
+        header a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
             color: #000;
             text-decoration: none;
             font-size: 1em;
         }
-        .navigation a:hover {
+        header a:hover {
             text-decoration: underline;
+        }
+
+        /* 次へ・戻るボタンのスタイル */
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navigation-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFFFFF; /* 白色の背景 */
+            color: #000000; /* 黒い文字 */
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            border: 2px solid #000000; /* 黒色のボーダー */
+            margin: 10px;
+        }
+        .navigation-button:hover {
+            background-color: #E0E0E0; /* ホバー時の背景色を薄いグレーに */
+            color: #000000; /* ホバー時の文字色も黒のまま */
+            border-color: #000000; /* ホバー時のボーダー色 */
         }
     </style>
 </head>
