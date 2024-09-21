@@ -75,6 +75,20 @@
         .profile .info a:hover {
             text-decoration: underline;
         }
+        /* 次へ・戻るリンクのスタイル */
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .navigation a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .navigation a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -137,6 +151,13 @@
             <h2>次回予告</h2>
             <p>次回は、ウェブサイトに動的なコンテンツを追加する方法について解説します。例えば、ユーザーの入力に応じてコンテンツが変わるようなインタラクティブな要素を実装する方法についてお話しします。お楽しみに！</p>
         </section>
+
+        <!-- 次へ・戻るリンク -->
+        <div class="navigation">
+            <a href="previous-page.html">← 戻る</a>
+            <a href="next-page.html">次へ →</a>
+        </div>
     </main>
 </body>
 </html>
+
