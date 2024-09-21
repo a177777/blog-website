@@ -1,1 +1,141 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Botを使ってサーバーを自動化しよう！</title>
+    <link rel="stylesheet" href="https://Ruigon.github.io/blog-website/css/styles.css">
+    <style>
+        header h1 {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 20px 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        section h2 {
+            font-size: 1.25em;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        section p, section ul {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        section ul {
+            margin-left: 20px;
+        }
+        section ul li {
+            margin-bottom: 10px;
+        }
+        header a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #000;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navigation-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFFFFF;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            border: 2px solid #000000;
+            margin: 10px;
+        }
+        .navigation-button:hover {
+            background-color: #E0E0E0;
+            color: #000000;
+            border-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discord Botを使ってサーバーを自動化しよう！</h1>
+        <a href="index.html">← 戻る</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Discord Botとは？</h2>
+            <p>Discord Botは、あなたのサーバーでさまざまな自動化機能を提供するプログラムです。Botを使えば、特定のコマンドを自動的に実行したり、サーバーの管理を簡単にすることができます。人気のあるBotとしては、音楽再生やチャットのモデレーションを行うものがあります。</p>
+        </section>
+
+        <section>
+            <h2>2. Botの導入方法</h2>
+            <p>以下の手順に従って、あなたのDiscordサーバーにBotを追加してみましょう。</p>
+            
+            <h3>ステップ1: Botを探す</h3>
+            <p>まず、使用したいBotを見つけましょう。以下のようなBotが人気です：</p>
+            <ul>
+                <li><a href="https://top.gg/" target="_blank">Top.gg</a> - 多くのBotを一覧から探すことができるサイト。</li>
+                <li><a href="https://mee6.xyz/" target="_blank">MEE6</a> - 自動化やレベルシステムをサポートする多機能Bot。</li>
+                <li><a href="https://groovy.bot/" target="_blank">Groovy</a> - 音楽再生に特化したBot。</li>
+            </ul>
+
+            <h3>ステップ2: Botの招待</h3>
+            <p>使いたいBotが見つかったら、サーバーに招待する必要があります。招待方法は通常、以下の手順で行います：</p>
+            <ul>
+                <li>Botの公式サイトで「Add to Discord」または「Invite」ボタンをクリック</li>
+                <li>あなたのDiscordアカウントにログインし、サーバーを選択</li>
+                <li>必要な権限を確認し、「Authorize（許可）」をクリック</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Botの設定</h2>
+            <h3>ステップ1: Botをサーバーで管理</h3>
+            <p>サーバーにBotが追加されたら、Botの設定を行います。多くのBotにはウェブ上のダッシュボードがあり、ここでBotの機能を細かくカスタマイズできます。例えば、MEE6では次のような設定ができます：</p>
+            <ul>
+                <li>特定のコマンドで自動メッセージを送信</li>
+                <li>ユーザーのレベルアップ時に通知</li>
+                <li>不適切な発言を自動的に削除</li>
+            </ul>
+
+            <h3>ステップ2: Botのコマンドを使う</h3>
+            <p>Botは通常、特定のコマンドをチャットに入力することで操作できます。例えば、音楽Botでは以下のコマンドが使えます：</p>
+            <ul>
+                <li><code>!play [曲名]</code> - 指定した曲を再生</li>
+                <li><code>!pause</code> - 再生中の曲を一時停止</li>
+                <li><code>!skip</code> - 次の曲にスキップ</li>
+            </ul>
+            <p>各Botのコマンドリストは、公式サイトやドキュメントで確認できます。</p>
+        </section>
+
+        <section>
+            <h2>4. Botの応用機能</h2>
+            <p>Botを使うことで、より高度なサーバー管理が可能になります。例えば、次のようなことができます：</p>
+            
+            <h3>自動モデレーション</h3>
+            <p>チャットでの荒らし行為や不適切な発言をBotが自動で検出し、警告や追放を行うことができます。MEE6やDynoなどのBotがこの機能を提供しています。</p>
+
+            <h3>ユーザーのレベルシステム</h3>
+            <p>アクティブなメンバーに対して経験値を付与し、一定のレベルに到達したら報酬を与えるシステムを導入できます。これにより、メンバーの活動を活発化させることが可能です。</p>
+        </section>
+
+        <!-- 次へ・戻るリンク -->
+        <div class="navigation">
+            <a href="article3.html" class="navigation-button">戻る</a>
+            <a href="article5.html" class="navigation-button">次へ</a>
+        </div>
+    </main>
+</body>
+</html>
